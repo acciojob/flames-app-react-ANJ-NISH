@@ -87,7 +87,7 @@ const App=()=> {
         return(
             <div id="main">
                <input type="text" data-testid="input1" name="name1" placeholder="Enter first name" value={name1} onChange={(e)=> setName1(e.target.value)}/>
-               <input type="text" data- testid="input2" name="name2" placeholder="Enter second name" value={name2} onChange={(e)=> setName2(e.target.value)}/>
+               <input type="text" data-testid="input2" name="name2" placeholder="Enter second name" value={name2} onChange={(e)=> setName2(e.target.value)}/>
                <button style={{color: 'skyblue'}} data-testid="calculate_relationship" name="calculate_relationship" onClick={()=> calcRelation(name1,name2)}> Calculate Relationship Future</button>
                <button style={{color: 'skyblue'}} data-testid="clear" name="clear" onClick={()=> {setName1(""); setName2(""); setRelationvar("");}}> Clear</button>
                <br/>
